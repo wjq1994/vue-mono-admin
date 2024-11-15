@@ -1,0 +1,54 @@
+{
+  "name": "@sd/playground",
+  "version": "5.4.6",
+  "homepage": "https://sd.pro",
+  "bugs": "https://github.com/sdjs/vue-sd-admin/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdjs/vue-sd-admin.git",
+    "directory": "playground"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "sd",
+    "email": "ann.sd@gmail.com",
+    "url": "https://github.com/anncwb"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "pnpm vite build --mode production",
+    "build:analyze": "pnpm vite build --mode analyze",
+    "dev": "pnpm vite --mode development",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck",
+    "test:e2e": "playwright test",
+    "test:e2e-ui": "playwright test --ui",
+    "test:e2e-codegen": "playwright codegen"
+  },
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "dependencies": {
+    "@tanstack/vue-query": "catalog:",
+    "@sd/access": "workspace:*",
+    "@sd/common-ui": "workspace:*",
+    "@sd/constants": "workspace:*",
+    "@sd/hooks": "workspace:*",
+    "@sd/icons": "workspace:*",
+    "@sd/layouts": "workspace:*",
+    "@sd/locales": "workspace:*",
+    "@sd/plugins": "workspace:*",
+    "@sd/preferences": "workspace:*",
+    "@sd/request": "workspace:*",
+    "@sd/stores": "workspace:*",
+    "@sd/styles": "workspace:*",
+    "@sd/types": "workspace:*",
+    "@sd/utils": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "ant-design-vue": "catalog:",
+    "dayjs": "catalog:",
+    "pinia": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:"
+  }
+}

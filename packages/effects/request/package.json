@@ -1,0 +1,30 @@
+{
+  "name": "@sd/request",
+  "version": "5.4.6",
+  "homepage": "https://github.com/sdjs/vue-sd-admin",
+  "bugs": "https://github.com/sdjs/vue-sd-admin/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdjs/vue-sd-admin.git",
+    "directory": "packages/effects/request"
+  },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@sd/locales": "workspace:*",
+    "@sd/utils": "workspace:*",
+    "axios": "catalog:"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "catalog:"
+  }
+}

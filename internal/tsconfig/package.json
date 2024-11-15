@@ -1,0 +1,25 @@
+{
+  "name": "@sd/tsconfig",
+  "version": "5.4.6",
+  "private": true,
+  "homepage": "https://github.com/sdjs/vue-sd-admin",
+  "bugs": "https://github.com/sdjs/vue-sd-admin/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdjs/vue-sd-admin.git",
+    "directory": "internal/tsconfig"
+  },
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "base.json",
+    "library.json",
+    "node.json",
+    "web-app.json",
+    "web.json"
+  ],
+  "dependencies": {
+    "@sd/types": "workspace:*",
+    "vite": "catalog:"
+  }
+}

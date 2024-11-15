@@ -1,0 +1,32 @@
+{
+  "name": "@sd/hooks",
+  "version": "5.4.6",
+  "homepage": "https://github.com/sdjs/vue-sd-admin",
+  "bugs": "https://github.com/sdjs/vue-sd-admin/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdjs/vue-sd-admin.git",
+    "directory": "packages/effects/hooks"
+  },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@sd-core/composables": "workspace:*",
+    "@sd/preferences": "workspace:*",
+    "@sd/stores": "workspace:*",
+    "@sd/types": "workspace:*",
+    "@sd/utils": "workspace:*",
+    "vue": "catalog:",
+    "vue-router": "catalog:",
+    "watermark-js-plus": "catalog:"
+  }
+}

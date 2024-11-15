@@ -1,0 +1,50 @@
+{
+  "name": "@sd/web-antd",
+  "version": "5.4.6",
+  "homepage": "https://sd.pro",
+  "bugs": "https://github.com/sdjs/vue-sd-admin/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdjs/vue-sd-admin.git",
+    "directory": "apps/web-antd"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "sd",
+    "email": "ann.sd@gmail.com",
+    "url": "https://github.com/anncwb"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "pnpm vite build --mode production",
+    "build:analyze": "pnpm vite build --mode analyze",
+    "dev": "vite --mode development",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck"
+  },
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "dependencies": {
+    "@sd/access": "workspace:*",
+    "@sd/common-ui": "workspace:*",
+    "@sd/constants": "workspace:*",
+    "@sd/hooks": "workspace:*",
+    "@sd/icons": "workspace:*",
+    "@sd/layouts": "workspace:*",
+    "@sd/locales": "workspace:*",
+    "@sd/plugins": "workspace:*",
+    "@sd/preferences": "workspace:*",
+    "@sd/request": "workspace:*",
+    "@sd/stores": "workspace:*",
+    "@sd/styles": "workspace:*",
+    "@sd/types": "workspace:*",
+    "@sd/utils": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "ant-design-vue": "catalog:",
+    "dayjs": "catalog:",
+    "pinia": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:"
+  }
+}

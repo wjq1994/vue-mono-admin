@@ -1,0 +1,43 @@
+{
+  "name": "@sd/layouts",
+  "version": "5.4.6",
+  "homepage": "https://github.com/sdjs/vue-sd-admin",
+  "bugs": "https://github.com/sdjs/vue-sd-admin/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdjs/vue-sd-admin.git",
+    "directory": "packages/effects/layouts"
+  },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@sd-core/composables": "workspace:*",
+    "@sd-core/form-ui": "workspace:*",
+    "@sd-core/layout-ui": "workspace:*",
+    "@sd-core/menu-ui": "workspace:*",
+    "@sd-core/popup-ui": "workspace:*",
+    "@sd-core/shadcn-ui": "workspace:*",
+    "@sd-core/shared": "workspace:*",
+    "@sd-core/tabs-ui": "workspace:*",
+    "@sd/constants": "workspace:*",
+    "@sd/hooks": "workspace:*",
+    "@sd/icons": "workspace:*",
+    "@sd/locales": "workspace:*",
+    "@sd/preferences": "workspace:*",
+    "@sd/stores": "workspace:*",
+    "@sd/types": "workspace:*",
+    "@sd/utils": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:"
+  }
+}

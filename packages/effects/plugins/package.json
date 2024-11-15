@@ -1,0 +1,42 @@
+{
+  "name": "@sd/plugins",
+  "version": "5.4.6",
+  "homepage": "https://github.com/sdjs/vue-sd-admin",
+  "bugs": "https://github.com/sdjs/vue-sd-admin/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdjs/vue-sd-admin.git",
+    "directory": "packages/effects/plugins"
+  },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    "./echarts": {
+      "types": "./src/echarts/index.ts",
+      "default": "./src/echarts/index.ts"
+    },
+    "./vxe-table": {
+      "types": "./src/vxe-table/index.ts",
+      "default": "./src/vxe-table/index.ts"
+    }
+  },
+  "dependencies": {
+    "@sd-core/form-ui": "workspace:*",
+    "@sd-core/shadcn-ui": "workspace:*",
+    "@sd-core/shared": "workspace:*",
+    "@sd/hooks": "workspace:*",
+    "@sd/icons": "workspace:*",
+    "@sd/locales": "workspace:*",
+    "@sd/preferences": "workspace:*",
+    "@sd/types": "workspace:*",
+    "@sd/utils": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "echarts": "catalog:",
+    "vue": "catalog:",
+    "vxe-pc-ui": "catalog:",
+    "vxe-table": "catalog:"
+  }
+}
